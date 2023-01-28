@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/animation.html -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="wdith=device-width, initial-scale=1.0"><style type="text/css" id="operaUserStyle"></style></head><body>"
+        <title>Animated Login Form</title>    
+        
+    
+    
+        <div class="box">
+            <div class="form">
+              <h2>Sing in</h2>
+              <div class="input-box">
+                <input type="text" required="required">
+                <span>Username</span>
+                <i></i>
+              </div>
+              <div class="input-box">
+                <input type="password" required="required">
+                <span>Password</span>
+                <i></i>
+              </div>
+              <div class="links">
+                <a href="http://127.0.0.1:5500/animation.html#">Forgot Password</a>
+                <a href="http://127.0.0.1:5500/animation.html#">Sing   up</a>  
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+            </div>
+        </div>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<link rel="stylesheet" href="./Animated Login Form_files/style.css"></body></html>
